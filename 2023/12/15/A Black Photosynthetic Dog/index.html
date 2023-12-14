@@ -13,20 +13,20 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/2023/12/12/a black photosynthetic dog/"/>
+    <link rel="canonical" href="http://example.com/2023/12/15/a black photosynthetic dog/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="这里是薛定谔之猫粮的绝对领域，祝你天天开心。 2023-12-14 03:05:07重复的意义 2023-12-12 15:12:52等我把天上的星星全部数完吧 2023-12-12 10:59:43「也许    我不是在等待她爱我    而是    在等待我不再等待她的那一天」 林宥嘉的《浪费》真是精准索敌 2023-12-11 19:11:10鼓起勇气去做吧。 2023-12-11 16:53">
+        <meta name="description" content="这里是薛定谔之猫粮的绝对领域，祝你天天开心。 2023-12-15 00:38:22对父母的叛逆 对爱人的叛逆 对自己的叛逆 2023-12-14 03:05:07重复的意义 2023-12-12 15:12:52等我把天上的星星全部数完吧 2023-12-12 10:59:43「也许    我不是在等待她爱我    而是    在等待我不再等待她的那一天」 林宥嘉的《浪费》真是精准索敌 2023">
 <meta property="og:type" content="article">
 <meta property="og:title" content="A Black Photosynthetic Dog">
-<meta property="og:url" content="http://example.com/2023/12/12/A%20Black%20Photosynthetic%20Dog/index.html">
+<meta property="og:url" content="http://example.com/2023/12/15/A%20Black%20Photosynthetic%20Dog/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="这里是薛定谔之猫粮的绝对领域，祝你天天开心。 2023-12-14 03:05:07重复的意义 2023-12-12 15:12:52等我把天上的星星全部数完吧 2023-12-12 10:59:43「也许    我不是在等待她爱我    而是    在等待我不再等待她的那一天」 林宥嘉的《浪费》真是精准索敌 2023-12-11 19:11:10鼓起勇气去做吧。 2023-12-11 16:53">
+<meta property="og:description" content="这里是薛定谔之猫粮的绝对领域，祝你天天开心。 2023-12-15 00:38:22对父母的叛逆 对爱人的叛逆 对自己的叛逆 2023-12-14 03:05:07重复的意义 2023-12-12 15:12:52等我把天上的星星全部数完吧 2023-12-12 10:59:43「也许    我不是在等待她爱我    而是    在等待我不再等待她的那一天」 林宥嘉的《浪费》真是精准索敌 2023">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-12-12T07:13:16.000Z">
-<meta property="article:modified_time" content="2023-12-13T19:05:30.218Z">
+<meta property="article:published_time" content="2023-12-14T16:38:48.000Z">
+<meta property="article:modified_time" content="2023-12-14T16:38:53.928Z">
 <meta property="article:author" content="SCFState">
 <meta name="twitter:card" content="summary">
     
@@ -119,79 +119,294 @@
 
 
         <div class="main-content-header">
-            <header class="navbar-container">
-    
-    <div class="navbar-content">
-        <div class="left">
-            
-            <a class="logo-title" href="/">
-                
-                A.T.Field of SCFState
-                
-            </a>
-        </div>
+            $logo-title-font-size = 2rem
+$desktop-search-icon-font-size = 1.5rem
+$navbar-bar-line-height = 2.5px
+$logo-image-box-width = 46px
 
-        <div class="right">
-            <!-- PC -->
-            <div class="desktop">
-                <ul class="navbar-list">
-                    
-                        
-                            <li class="navbar-item">
-                                <!-- Menu -->
-                                <a class="" 
-                                    href="/"  >
-                                    
-                                        
-                                            <i class="fa-regular fa-house"></i>
-                                        
-                                        HOME
-                                    
-                                </a>
-                                <!-- Submenu -->
-                                
-                            </li>
-                    
-                    
-                </ul>
-            </div>
-            <!-- Mobile -->
-            <div class="mobile">
-                
-                <div class="icon-item navbar-bar">
-                    <div class="navbar-bar-middle"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+@import '../../common/variables'
 
-    <!-- Mobile drawer -->
-    <div class="navbar-drawer w-full absolute top-0 left-0 bg-background-color">
-        <ul class="drawer-navbar-list flex flex-col justify-start items-center">
-            
-                
-                    <li class="drawer-navbar-item text-base my-1.5 flex justify-center items-center">
-                        <a class="rounded-3xl py-1.5 px-5 hover:border hover:!text-primary active:!text-primary group " 
-                        href="/"  >
-                             
-                                
-                                    <i class="fa-regular fa-house"></i>
-                                
-                                HOME
-                            
-                        </a>
-                    </li>
-                    <!-- Submenu -->
-                    
-            
+.navbar-container
+  font-family 'Chillax-Variable', sans-serif
+  width 100%
+  height 100%
+  box-sizing border-box
+  display flex
+  align-items center
+  justify-content center
+  background $nav-color-bg
+  -webkit-backdrop-filter blur(10px)
+  backdrop-filter blur(10px)
+  padding-top $scroll-progress-bar-height
+  hover-style(
+    false,
+    0,
+    0
+  )
 
-        </ul>
-    </div>
+  .navbar-content
+    position relative
+    height 100%
+    width $main-content-width
+    max-width $content-max-width
+    display flex
+    flex-direction row
+    justify-content space-between
+    align-items center
+    z-index $z-index-5
+    transition max-width 0.3s ease
 
-    <div class="window-mask"></div>
+    &.has-home-banner
+      max-width $content-max-width * 1.2
 
-</header>
+    +redefine-tablet()
+      width $main-content-width-tablet
 
+    +redefine-mobile()
+      width $main-content-width-mobile
+
+    .left
+      display flex
+      align-items center
+      transform-origin left
+      transition-t('transform', '0', '0.2', 'linear')
+
+      .navbar-shrink &
+        transform scale(0.72)
+        transform-origin left
+
+      if (hexo-config('defaults.logo') && hexo-config('defaults.logo') != '')
+        .logo-image
+          width $logo-image-box-width
+          height $logo-image-box-width
+          margin-right 8px
+
+          +redefine-tablet()
+            width: $logo-image-box-width * 0.9
+            height: $logo-image-box-width * 0.9
+
+          +redefine-mobile()
+            width: $logo-image-box-width * 0.8
+            height: $logo-image-box-width * 0.8
+
+          img
+            border-radius 6px
+            width 100%
+
+      .logo-title
+        font-size $logo-title-font-size
+        font-weight 520
+        // letter-spacing 1px
+        line-height 1
+        color var(--first-text-color)
+
+        h1
+          margin 0
+          font-size $logo-title-font-size
+          font-weight 520
+          //letter-spacing 1px
+          line-height 1
+          color var(--first-text-color)
+
+          +redefine-tablet()
+            font-size: $logo-title-font-size * 0.9
+
+          +redefine-mobile()
+            font-size: $logo-title-font-size * 0.8
+
+        +redefine-tablet()
+          font-size: $logo-title-font-size * 0.9
+
+        +redefine-mobile()
+          font-size: $logo-title-font-size * 0.8
+
+    .right
+      .desktop
+        .navbar-list
+          display flex
+          gap 24px
+          align-items center
+
+          +redefine-tablet()
+            display none
+
+          .navbar-item
+            float left
+            // padding 5px
+            position relative
+            font-size 1rem
+            font-weight 450
+            cursor pointer
+            color var(--default-text-color)
+
+            a
+              display block
+              padding 5px
+
+            a .fa-chevron-down
+              transform rotate(0deg)
+              transition transform 0.3s ease
+
+            &:hover a .fa-chevron-down
+              transform rotate(180deg)
+
+            &:hover .has-dropdown
+              &::after
+                display none !important
+
+            &:hover a, .active
+              &::after
+                content ''
+                position absolute
+                bottom -5px
+                left 50%
+                width 100%
+                height 2px
+                transform translateX(-50%)
+                border-radius $redefine-border-radius-large
+                background var(--primary-color)
+                transition-t('transform, bottom', '0, 0', '0.2, 0.2', 'linear, linear')
+
+                .navbar-shrink &
+                  bottom -($navbar-shrink-height / 2 - 17)
+
+            &.search
+              font-size $desktop-search-icon-font-size
+              margin-left 26px
+
+              i
+                color var(--default-text-color)
+
+            .sub-menu
+              position absolute
+              right auto
+              left 50%
+              -webkit-transform translate(-50%, 0)
+              -o-transform translate(-50%, 0)
+              transform translate(-50%, 0)
+              margin-top 0px
+              width auto
+              text-align center
+              list-style none
+              padding 0 10px
+              border-radius $redefine-border-radius-large
+              // visibility hidden
+              max-height 0px
+              overflow hidden
+              transition-t('all', '0', '0.2', 'linear')
+
+              li a
+                white-space nowrap
+                color var(--default-text-color)
+                font-size 1rem
+                padding 3px 15px
+                display block
+                text-align center
+                border-radius 8px
+                transition-t('all', '0', '0.2', 'linear')
+
+                &:hover
+                  color var(--primary-color)
+                  background-color var(--third-background-color)
+
+        .navbar-list .navbar-item:hover .sub-menu
+          // visibility visible
+          max-height 500px
+          transition-t('all', '0', '0.2', 'ease')
+          redefine-container(
+            false,
+            0,
+            0,
+            10px,
+            5px
+          )
+
+      .mobile
+        display flex
+        justify-content space-between
+        align-items center
+
+        .icon-item
+          display none
+          position relative
+          cursor pointer
+          font-size 18px
+          margin-left 12px
+          width 20px
+          height 20px
+          color var(--default-text-color)
+
+          i
+            color var(--default-text-color)
+
+          &:first-child
+            margin-left 0
+
+          +redefine-tablet()
+            display flex
+            justify-content center
+            align-items center
+
+        .navbar-bar
+          .navbar-bar-middle
+            width 18px
+            height $navbar-bar-line-height
+            position relative
+            background var(--default-text-color)
+
+            .navbar-drawer-show &
+              background transparent
+
+            &::before, &::after
+              content ''
+              position absolute
+              left 0
+              width 100%
+              height $navbar-bar-line-height
+              background var(--default-text-color)
+              transition-t('transform', '0', '0.38', 'ease')
+
+            &::before
+              top -6px
+
+              .navbar-drawer-show &
+                transform translateY(6px) rotate(45deg)
+
+            &::after
+              bottom -6px
+
+              .navbar-drawer-show &
+                transform translateY(-6px) rotate(-45deg)
+
+  .navbar-drawer
+    padding $navbar-height 0 20px 0
+    transform scaleY(0)
+    transform-origin top
+    z-index $z-index-2
+    opacity 0
+    transition-t('transform,opacity', '0,0.1', '0.38,0.38', 'ease,ease')
+
+    .navbar-drawer-show &
+      transform scaleY(1)
+      opacity 1
+
+  .window-mask
+    position absolute
+    top 0
+    width 100%
+    height 100vh
+    background rgba(0, 0, 0, 0.4)
+    z-index $z-index-1
+    visibility hidden
+    opacity 0
+    transition-t('transform, opacity', '0, 0', '0.38, 0.38', 'ease, ease')
+
+    .navbar-drawer-show &
+      visibility visible
+      opacity 1
+
+.navbar-drawer-show
+  overflow hidden
 
         </div>
 
@@ -229,15 +444,15 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2023-12-12 15:13:16</span>
-        <span class="mobile">2023-12-12 15:13:16</span>
+        <span class="desktop">2023-12-15 00:38:48</span>
+        <span class="mobile">2023-12-15 00:38:48</span>
         <span class="hover-info">Created</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-12-14 03:05:30</span>
-            <span class="mobile">2023-12-14 03:05:30</span>
+            <span class="desktop">2023-12-15 00:38:53</span>
+            <span class="mobile">2023-12-15 00:38:53</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -265,6 +480,9 @@
 
         <div class="article-content markdown-body">
             <p><strong>这里是薛定谔之猫粮的绝对领域，祝你天天开心。</strong></p>
+<h3 id="2023-12-15-00-38-22"><a href="#2023-12-15-00-38-22" class="headerlink" title="2023-12-15 00:38:22"></a>2023-12-15 00:38:22</h3><p>对父母的叛逆</p>
+<p>对爱人的叛逆</p>
+<p>对自己的叛逆</p>
 <h3 id="2023-12-14-03-05-07"><a href="#2023-12-14-03-05-07" class="headerlink" title="2023-12-14 03:05:07"></a>2023-12-14 03:05:07</h3><p>重复的意义</p>
 <h3 id="2023-12-12-15-12-52"><a href="#2023-12-12-15-12-52" class="headerlink" title="2023-12-12 15:12:52"></a>2023-12-12 15:12:52</h3><p>等我把天上的星星全部数完吧</p>
 <h3 id="2023-12-12-10-59-43"><a href="#2023-12-12-10-59-43" class="headerlink" title="2023-12-12 10:59:43"></a>2023-12-12 10:59:43</h3><p><em>「也许    我不是在等待她爱我<br>    而是    在等待我不再等待她的那一天」</em></p>
@@ -330,15 +548,15 @@
         <li><strong>Title:</strong> A Black Photosynthetic Dog</li>
         <li><strong>Author:</strong> SCFState</li>
         <li><strong>Created at
-                :</strong> 2023-12-12 15:13:16</li>
+                :</strong> 2023-12-15 00:38:48</li>
         
             <li>
                 <strong>Updated at
-                    :</strong> 2023-12-14 03:05:30
+                    :</strong> 2023-12-15 00:38:53
             </li>
         
         <li>
-            <strong>Link:</strong> https://scfstate.github.io/2023/12/12/A Black Photosynthetic Dog/
+            <strong>Link:</strong> https://scfstate.github.io/2023/12/15/A Black Photosynthetic Dog/
         </li>
         <li>
             <strong>
@@ -435,7 +653,7 @@
     <div class="post-toc">
         <div class="toc-title">On this page</div>
         <div class="page-title">A Black Photosynthetic Dog</div>
-        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-14-03-05-07"><span class="nav-text">2023-12-14 03:05:07</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-12-15-12-52"><span class="nav-text">2023-12-12 15:12:52</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-12-10-59-43"><span class="nav-text">2023-12-12 10:59:43</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-11-19-11-10"><span class="nav-text">2023-12-11 19:11:10</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-11-16-53-35"><span class="nav-text">2023-12-11 16:53:35</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-10-05-42-31"><span class="nav-text">2023-12-10 05:42:31</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-09-14-36-04"><span class="nav-text">2023-12-09 14:36:04</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-07-22-51-50"><span class="nav-text">2023-12-07 22:51:50</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-07-18-08-05"><span class="nav-text">2023-12-07 18:08:05</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-06-23-13-36"><span class="nav-text">2023-12-06 23:13:36</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-06-15-35-47"><span class="nav-text">2023-12-06 15:35:47</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-05-01-01-01"><span class="nav-text">2023-12-05 01:01:01</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-04-19-46-07"><span class="nav-text">2023-12-04 19:46:07</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-03-16-43-18"><span class="nav-text">2023-12-03 16:43:18</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-02-20-57-32"><span class="nav-text">2023-12-02 20:57:32</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-01-01-53-02"><span class="nav-text">2023-12-01 01:53:02</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-30-11-47-21"><span class="nav-text">2023-11-30 11:47:21</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-30-10-01-18"><span class="nav-text">2023-11-30 10:01:18</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-29-01-07-09"><span class="nav-text">2023-11-29 01:07:09</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-28-01-09-13"><span class="nav-text">2023-11-28 01:09:13</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-27-23-22-16"><span class="nav-text">2023-11-27 23:22:16</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-27-15-00-50"><span class="nav-text">2023-11-27 15:00:50</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-24-20-20-17"><span class="nav-text">2023-11-24 20:20:17</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-24-10-49-56"><span class="nav-text">2023-11-24 10:49:56</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-24-00-53-35"><span class="nav-text">2023-11-24 00:53:35</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-23-13-35-29"><span class="nav-text">2023-11-23 13:35:29</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-23-01-46-39"><span class="nav-text">2023-11-23 01:46:39</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-23-00-34-04"><span class="nav-text">2023-11-23 00:34:04</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-22-09-40-32"><span class="nav-text">2023-11-22 09:40:32</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-20-22-52-20"><span class="nav-text">2023-11-20 22:52:20</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-20-02-33-02"><span class="nav-text">2023-11-20 02:33:02</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-18-23-26-50"><span class="nav-text">2023-11-18 23:26:50</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-17-21-29-15"><span class="nav-text">2023-11-17 21:29:15</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-16-23-56-48"><span class="nav-text">2023-11-16 23:56:48</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-16-09-25-52"><span class="nav-text">2023-11-16 09:25:52</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-15-01-02-46"><span class="nav-text">2023-11-15 01:02:46</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-14-00-15-47"><span class="nav-text">2023-11-14 00:15:47</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-13-10-28-17"><span class="nav-text">2023-11-13 10:28:17</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-12-01-11-07"><span class="nav-text">2023-11-12 01:11:07</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-11-23-06-28"><span class="nav-text">2023-11-11 23:06:28</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-10-00-26-36"><span class="nav-text">2023-11-10 00:26:36</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-09-11-31-48"><span class="nav-text">2023-11-09 11:31:48</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-08-10-24-05"><span class="nav-text">2023-11-08 10:24:05</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-15-00-38-22"><span class="nav-text">2023-12-15 00:38:22</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-14-03-05-07"><span class="nav-text">2023-12-14 03:05:07</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-12-15-12-52"><span class="nav-text">2023-12-12 15:12:52</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-12-10-59-43"><span class="nav-text">2023-12-12 10:59:43</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-11-19-11-10"><span class="nav-text">2023-12-11 19:11:10</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-11-16-53-35"><span class="nav-text">2023-12-11 16:53:35</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-10-05-42-31"><span class="nav-text">2023-12-10 05:42:31</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-09-14-36-04"><span class="nav-text">2023-12-09 14:36:04</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-07-22-51-50"><span class="nav-text">2023-12-07 22:51:50</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-07-18-08-05"><span class="nav-text">2023-12-07 18:08:05</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-06-23-13-36"><span class="nav-text">2023-12-06 23:13:36</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-06-15-35-47"><span class="nav-text">2023-12-06 15:35:47</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-05-01-01-01"><span class="nav-text">2023-12-05 01:01:01</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-04-19-46-07"><span class="nav-text">2023-12-04 19:46:07</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-03-16-43-18"><span class="nav-text">2023-12-03 16:43:18</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-02-20-57-32"><span class="nav-text">2023-12-02 20:57:32</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-12-01-01-53-02"><span class="nav-text">2023-12-01 01:53:02</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-30-11-47-21"><span class="nav-text">2023-11-30 11:47:21</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-30-10-01-18"><span class="nav-text">2023-11-30 10:01:18</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-29-01-07-09"><span class="nav-text">2023-11-29 01:07:09</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-28-01-09-13"><span class="nav-text">2023-11-28 01:09:13</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-27-23-22-16"><span class="nav-text">2023-11-27 23:22:16</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-27-15-00-50"><span class="nav-text">2023-11-27 15:00:50</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-24-20-20-17"><span class="nav-text">2023-11-24 20:20:17</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-24-10-49-56"><span class="nav-text">2023-11-24 10:49:56</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-24-00-53-35"><span class="nav-text">2023-11-24 00:53:35</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-23-13-35-29"><span class="nav-text">2023-11-23 13:35:29</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-23-01-46-39"><span class="nav-text">2023-11-23 01:46:39</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-23-00-34-04"><span class="nav-text">2023-11-23 00:34:04</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-22-09-40-32"><span class="nav-text">2023-11-22 09:40:32</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-20-22-52-20"><span class="nav-text">2023-11-20 22:52:20</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-20-02-33-02"><span class="nav-text">2023-11-20 02:33:02</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-18-23-26-50"><span class="nav-text">2023-11-18 23:26:50</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-17-21-29-15"><span class="nav-text">2023-11-17 21:29:15</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-16-23-56-48"><span class="nav-text">2023-11-16 23:56:48</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-16-09-25-52"><span class="nav-text">2023-11-16 09:25:52</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-15-01-02-46"><span class="nav-text">2023-11-15 01:02:46</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-14-00-15-47"><span class="nav-text">2023-11-14 00:15:47</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-13-10-28-17"><span class="nav-text">2023-11-13 10:28:17</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-12-01-11-07"><span class="nav-text">2023-11-12 01:11:07</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-11-23-06-28"><span class="nav-text">2023-11-11 23:06:28</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-10-00-26-36"><span class="nav-text">2023-11-10 00:26:36</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-09-11-31-48"><span class="nav-text">2023-11-09 11:31:48</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-11-08-10-24-05"><span class="nav-text">2023-11-08 10:24:05</span></a></li></ol>
 
     </div>
 </div>
